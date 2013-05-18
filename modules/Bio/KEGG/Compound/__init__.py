@@ -1,0 +1,1 @@
+/usr/share/pyshared/Bio/KEGG/Compound/__init__.py

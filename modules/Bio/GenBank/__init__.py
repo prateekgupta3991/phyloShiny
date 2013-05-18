@@ -1,0 +1,1 @@
+/usr/share/pyshared/Bio/GenBank/__init__.py

@@ -12,6 +12,12 @@ import os
 import socket
 import urllib2
 from gluon import *
+import sys
+biopython_lib = request.folder + "modules/"
+sys.path.append(biopython_lib)
+from Bio import Phylo
+from Bio.Phylo import *							#import biopython modules as per requirement 
+
 
 def index():
     rootFolder = current.request.folder
@@ -113,17 +119,20 @@ def getPhylotasticTree():
 
     speciesTreeFilename = filePrefix+'_species_tree.txt'
     open(speciesTreeFilename,'w').write(speciesTreeString)
+   
+    #setting a counter for counting nodes i.e.number of species in the species newick tree.
+    #I have referenced the link http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc182 to understand the count_terminals() function 
 
-    # TODO: It would be nice here to count the number of species in
-    # the returned species tree, so we can let users know if PTastic
-    # found everything we searched for. This would require parsing the
-    # Newick and counting nodes, probably using something like
-    # BioPython rather than making an external call to Java again.
+    got_nodes=0									#counter to keep the count of the nodes
+    tree = Phylo.read(speciesTreeFilename, 'newick')				#tree reads the species labels in newick format
+    got_nodes=BaseTree.TreeMixin.count_terminals(tree);
 
+    #no. of non-terminal nodes received in got_nodes.Now can be printed or checked with user input value to test if all species received.
     speciesTreeWebFile = getRelativeWebPath('_species_tree.txt')
 
     return response.json( dict(vizFile = speciesTreeWebFile,
-                               vizLabel = "Phylotastic Species Tree"
+                               vizLabel = "Phylotastic Species Tree",
+			       got_nodes=got_nodes
                                ) )
 
 def reconcileTrees():

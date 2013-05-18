@@ -182,9 +182,13 @@ function reconcileTrees(response) {
   var data = JSON.parse(response);
   var speciesTreeFile = data.speciesTreeFile;
 
+  var nodesInSpeciesTree=data.got_nodes;		//retrieving speciescount from the ajax call response
+  								//to display in frontend javascript.
   var msg = [
     createVizLink(data),
-    'Species tree obtained.', ].join('');
+    'Species tree obtained.','Identified <b>' + 
+     nodesInSpeciesTree + '</b> species in the phylotastic<b>'+			//displaying the speciescount 
+     '</b> received species newick tree' ].join('');
 
   updateStatus({
     id: 'getPhylotasticTree',

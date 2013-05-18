@@ -1,0 +1,1 @@
+/usr/share/pyshared/gluon/contrib/minify/jsmin.py

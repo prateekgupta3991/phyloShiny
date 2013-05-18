@@ -1,0 +1,1 @@
+/usr/share/pyshared/Bio/PDB/MMCIFParser.py

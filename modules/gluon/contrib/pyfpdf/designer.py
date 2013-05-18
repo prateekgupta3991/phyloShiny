@@ -1,0 +1,1 @@
+/usr/share/pyshared/gluon/contrib/pyfpdf/designer.py

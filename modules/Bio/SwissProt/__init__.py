@@ -1,0 +1,1 @@
+/usr/share/pyshared/Bio/SwissProt/__init__.py

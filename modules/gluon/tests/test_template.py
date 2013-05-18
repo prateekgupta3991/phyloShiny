@@ -1,0 +1,1 @@
+/usr/share/pyshared/gluon/tests/test_template.py

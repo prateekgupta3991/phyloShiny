@@ -1,0 +1,1 @@
+/usr/share/pyshared/gluon/contrib/login_methods/loginza.py

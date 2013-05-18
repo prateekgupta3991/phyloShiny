@@ -1,0 +1,1 @@
+/usr/share/pyshared/Bio/Data/CodonTable.py

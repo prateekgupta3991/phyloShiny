@@ -1,0 +1,1 @@
+/usr/share/pyshared/gluon/contrib/login_methods/extended_login_form.py
