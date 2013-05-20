@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/reserved_sql_keywords.py

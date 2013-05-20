@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/pymysql/charset.py

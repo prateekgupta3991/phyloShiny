@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/gae_memcache.py

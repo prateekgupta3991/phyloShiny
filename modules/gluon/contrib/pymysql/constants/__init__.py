@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/pymysql/constants/__init__.py

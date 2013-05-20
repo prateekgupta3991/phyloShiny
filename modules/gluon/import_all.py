@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/import_all.py
