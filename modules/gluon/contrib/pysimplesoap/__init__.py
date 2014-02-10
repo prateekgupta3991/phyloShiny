@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/pysimplesoap/__init__.py

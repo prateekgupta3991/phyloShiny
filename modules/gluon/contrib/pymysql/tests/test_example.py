@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/pymysql/tests/test_example.py

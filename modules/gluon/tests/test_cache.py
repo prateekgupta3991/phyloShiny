@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/tests/test_cache.py

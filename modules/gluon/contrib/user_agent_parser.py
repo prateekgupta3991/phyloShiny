@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/user_agent_parser.py

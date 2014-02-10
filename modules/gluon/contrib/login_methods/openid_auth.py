@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/login_methods/openid_auth.py

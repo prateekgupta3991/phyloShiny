@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/main.py

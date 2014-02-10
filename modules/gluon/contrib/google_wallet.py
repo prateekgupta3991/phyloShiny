@@ -1,1 +1,0 @@
-/usr/share/pyshared/gluon/contrib/google_wallet.py
